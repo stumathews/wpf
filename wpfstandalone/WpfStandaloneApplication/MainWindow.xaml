@@ -1,0 +1,31 @@
+﻿<!-- This is the XAML that will represent the UI of our application -->
+    <!-- Notice the Window x:Class attribute here, this is the cs class in the code behind, and serves as the link between the xaml and code-->
+    <Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wpf Standalone application template" Height="350" Width="525">
+        <!-- Here we define the contents of the Window/Form.
+        Everything we add here is instantiated implicitly just as if we were declaring it in code and then instantiating it explicitly. -->
+    <Grid>
+        <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="49,4,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Name="txtName"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="185,6,0,0" VerticalAlignment="Top" Width="75" Click="Submit"/>
+        <!-- Notice that the StackPanel is allowing the routing of Click events to a StackPanel_Click_1 event handler.
+        This will ensure that all click events by buttons within the stack panel will be handled by one piece of code, instead of multiple handlers for each button that is clicked.
+        -->
+        <StackPanel ButtonBase.Click="StackPanel_Click_1"  HorizontalAlignment="Left" Height="93" Margin="66,52,0,0" VerticalAlignment="Top" Width="143" >
+            <Menu>
+                <MenuItem Command="ApplicationCommands.Paste"></MenuItem>
+                <MenuItem Command="ApplicationCommands.Copy"></MenuItem>
+                <MenuItem Command="ApplicationCommands.Cut"></MenuItem>
+            </Menu>
+            <Button Content="Button1"/>
+            <Button Content="Button2"/>
+            <Button Content="Button3"/>
+            <Button Content="Button4"/>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

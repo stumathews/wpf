@@ -1,0 +1,10 @@
+﻿
+DONE:
+=====
+1. Specifying Routed Events
+2. Laying out controls in XAML designer
+3. Using ApplicationCommands to use common functionality in many places by many controls that support the Command
+
+TODO:
+=====
+1. Instead of using the native ApplicationCommands.Paste command, make my own: http://msdn.microsoft.com/en-us/library/ms771540.aspx

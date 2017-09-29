@@ -1,0 +1,17 @@
+﻿<!-- Notice that the Page type is used in a browser app, not a Windows class as a stand alone WPF application-->
+    <Page x:Class="WpfBrowserApplication.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page1"
+      KeepAlive="True"> <!-- This simple attribute keeps the page state on the page navigation joural -->
+    <Grid>        
+        <TextBlock>
+        <Hyperlink NavigateUri="Page2.xaml">Go to page 2</Hyperlink>
+        </TextBlock>
+    </Grid>
+    
+</Page>
